@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="373.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0" styleClass="white-bg" stylesheets="@design/style.css">
+         <children>
+            <AnchorPane fx:id="login_form" layoutX="14.0" layoutY="14.0" prefHeight="573.0" prefWidth="345.0" visible="false">
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="65.0" layoutX="140.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="118.0" layoutY="107.0" text="Sign in account">
+                     <font>
+                        <Font name="Gill Sans MT" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="login_username" layoutX="38.0" layoutY="171.0" prefHeight="31.0" prefWidth="282.0" promptText="Username" styleClass="textfield" stylesheets="@design/style.css" />
+                  <PasswordField fx:id="login_password" layoutX="38.0" layoutY="231.0" prefHeight="31.0" prefWidth="282.0" promptText="Password" stylesheets="@design/style.css" />
+                  <TextField fx:id="login_showPassword" layoutX="32.0" layoutY="231.0" prefHeight="31.0" prefWidth="282.0" promptText="Password" styleClass="textfield" stylesheets="@design/style.css" visible="false" />
+                  <CheckBox fx:id="login_selectShowPassword" layoutX="38.0" layoutY="276.0" mnemonicParsing="false" text="Show password" />
+                  <Button fx:id="login_btn" layoutX="38.0" layoutY="335.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="282.0" styleClass="btn" stylesheets="@design/style.css" text="Login" />
+                  <Label layoutX="120.0" layoutY="469.0" text="Register Account">
+                     <font>
+                        <Font name="Gill Sans MT" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="login_createAccount" layoutX="38.0" layoutY="507.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="282.0" styleClass="btnblue" stylesheets="@design/style.css" text="Create Account" />
+                  <Hyperlink fx:id="login_forgotPassword" layoutX="214.0" layoutY="273.0" text="Forgot Password">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="signup_form" layoutX="14.0" layoutY="14.0" prefHeight="609.0" prefWidth="345.0" visible="false">
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="65.0" layoutX="140.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="111.0" layoutY="99.0" text="Sign Up Account">
+                     <font>
+                        <Font name="Gill Sans MT" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="signup_username" layoutX="31.0" layoutY="195.0" prefHeight="31.0" prefWidth="282.0" promptText="Username" styleClass="textfield" stylesheets="@design/style.css" />
+                  <PasswordField fx:id="signup_password" layoutX="31.0" layoutY="238.0" prefHeight="31.0" prefWidth="282.0" promptText="Password" stylesheets="@design/style.css" />
+                  <Button fx:id="signup_btn" layoutX="28.0" layoutY="426.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="282.0" styleClass="btn" stylesheets="@design/style.css" text="Sign up" />
+                  <Label layoutX="122.0" layoutY="500.0" text="Sign In Account">
+                     <font>
+                        <Font name="Gill Sans MT" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="signup_loginAccount" layoutX="35.0" layoutY="547.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="282.0" styleClass="btnblue" stylesheets="@design/style.css" text="Login Account" />
+                  <TextField fx:id="signup_email" layoutX="31.0" layoutY="152.0" prefHeight="31.0" prefWidth="282.0" promptText="Email Address" styleClass="textfield" stylesheets="@design/style.css" />
+                  <PasswordField fx:id="signup_cPassword" layoutX="31.0" layoutY="279.0" prefHeight="31.0" prefWidth="282.0" promptText="Confirm Password" stylesheets="@design/style.css" />
+                  <ComboBox fx:id="signup_selectQuestion" layoutX="31.0" layoutY="323.0" prefHeight="31.0" prefWidth="282.0" promptText="Select Question " />
+                  <TextField fx:id="signup_answer" layoutX="31.0" layoutY="367.0" prefHeight="31.0" prefWidth="282.0" promptText="Answere" styleClass="textfield" stylesheets="@design/style.css" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="forgot_form" layoutX="14.0" layoutY="14.0" prefHeight="573.0" prefWidth="345.0" visible="false">
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="65.0" layoutX="140.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="111.0" layoutY="109.0" text="Forget Password">
+                     <font>
+                        <Font name="Gill Sans MT" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="forgot_answer" layoutX="32.0" layoutY="287.0" prefHeight="31.0" prefWidth="282.0" promptText="Answer" styleClass="textfield" stylesheets="@design/style.css" />
+                  <Button fx:id="forgot_proceedBtn" layoutX="32.0" layoutY="340.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="282.0" styleClass="btn" stylesheets="@design/style.css" text="Proceed" />
+                  <Button fx:id="forgot_backBtn" layoutX="38.0" layoutY="507.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="282.0" styleClass="btnblue" stylesheets="@design/style.css" text="Back" />
+                  <ComboBox fx:id="forgot_selectQuestion" layoutX="32.0" layoutY="242.0" prefHeight="31.0" prefWidth="282.0" promptText="Select Question" />
+                  <TextField fx:id="forgot_username" layoutX="32.0" layoutY="198.0" prefHeight="31.0" prefWidth="282.0" promptText="Username" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="changePass_form" layoutX="14.0" layoutY="13.0" prefHeight="596.0" prefWidth="345.0" visible="false">
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="65.0" layoutX="140.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="111.0" layoutY="109.0" text="Forget Password">
+                     <font>
+                        <Font name="Gill Sans MT" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="changePass_proceedBtn" layoutX="32.0" layoutY="315.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="282.0" styleClass="btn" stylesheets="@design/style.css" text="Proceed" />
+                  <Button fx:id="changePass_backBtn" layoutX="38.0" layoutY="507.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="282.0" styleClass="btnblue" stylesheets="@design/style.css" text="Back" />
+                  <PasswordField fx:id="changePass_passwoed" layoutX="32.0" layoutY="208.0" prefHeight="31.0" prefWidth="282.0" promptText="Password" />
+                  <PasswordField fx:id="changePass_cPasswoed" layoutX="32.0" layoutY="256.0" prefHeight="31.0" prefWidth="282.0" promptText="Confirm Password" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
